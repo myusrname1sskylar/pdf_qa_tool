@@ -10,7 +10,7 @@ with st.sidebar:
     openai_api_key = st.text_input("请输入OpenAI API密钥：", 
                                    type="password",
                                    value="sk-sxe8evtSOHjvwW6M56FdD5270b8a4f1aBeE704Ff36310147")
-    st.markdown("[AI数据分析工具🔧](https://platform.openai.com/account/api-keys)")
+    st.markdown("[AI数据分析工具🔧](https://csv-analyze.streamlit.app)")
 
 if "memory" not in st.session_state:
     st.session_state["memory"] = ConversationBufferMemory(
